@@ -12,7 +12,7 @@ Infinitix es una aplicación CRM construida con React y Auth0 para la autenticac
   - [Plugins y Herramientas](#plugins-y-herramientas)
 
 ### Estructura del Proyecto
-
+```bash
 infinitix/
 ├── public/
 ├── src/
@@ -39,7 +39,7 @@ infinitix/
 │ ├── App.js
 │ ├── App.css
 ├── package.json
-
+```
 ### Instalación
 
 1. Clona el repositorio:
