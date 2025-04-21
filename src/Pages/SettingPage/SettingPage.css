@@ -1,19 +1,54 @@
+/* Asegurarse de que los estilos se apliquen solo a la página de configuración */
 :root {
-    --morado-obscuro: #56377C;
-    --morado: #6d41a1;
-    --morado-hover: #5D3F81;
-  }
+  --morado-obscuro: #0e8cfa;
+  --morado: #0e8cfa;
+  --morado-hover: #0e8cfa;
+}
 
-  .btn {
-    background: var(--morado-obscuro) !important;
+/* Estilos para la imagen de perfil */
+.setting-page .w-24 {
+  border: 3px solid var(--morado);
+}
 
-    &:hover {
-      background: var(--morado-hover) !important;
-    }
-  }
+/* Estilos del botón */
+.setting-page .btn {
+  background: var(--morado-obscuro) !important;
+  border: 2px solid var(--morado);
+  color: white;
+}
 
-  .input-password:focus {
-    border-color: var(--morado) !important;
+.setting-page .btn:hover {
+  background: var(--morado-hover) !important;
+  border-color: var(--morado-hover);
+}
 
-    
-  }
+/* Estilos para los campos de contraseña */
+.setting-page .input-password:focus {
+  border-color: var(--morado) !important;
+}
+
+.setting-page .input-password .p-inputtext {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.setting-page .input-password .p-password-input {
+  color: #333;
+}
+
+/* Hacer que el texto sea negro en toda la página */
+.setting-page h1,
+.setting-page h2,
+.setting-page p,
+.setting-page span,
+.setting-page label,
+.setting-page .p-password-input,
+.setting-page .p-inputtext {
+  color: var(--texto-negro) !important;
+}
+
+/* Si deseas cambiar el texto en los botones también */
+.setting-page .btn {
+  color: white !important; /* Botón sigue siendo blanco */
+}

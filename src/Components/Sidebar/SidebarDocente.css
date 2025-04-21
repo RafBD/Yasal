@@ -1,0 +1,7 @@
+.oculto {
+    display: none;
+  }
+  .p-button:focus {
+    outline: none;
+    box-shadow: none;
+}

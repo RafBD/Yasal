@@ -1,0 +1,28 @@
+/* Contenedor cuadrado para la imagen */
+.foto-container {
+  display: grid;
+  justify-content: center;
+  align-items: normal;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;  /* Elimina el desbordamiento si es necesario */
+}
+
+/* Estilo para la imagen, ajustada sin recortes */
+.companero-foto {
+  width: 100%;          /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%;         /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: contain;  /* Mantiene la imagen completa sin recortes, ajustándose al tamaño del contenedor */
+  object-position: center; /* Asegura que la imagen se mantenga centrada en el contenedor */
+  border-radius: 8px;   /* Redondea las esquinas si es necesario */
+  display: block;
+}
+
+/* Responsividad: ajusta el tamaño de las imágenes en pantallas pequeñas */
+@media (max-width: 600px) {
+  .companero-foto {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1;  /* Mantiene la proporción cuadrada */
+  }
+}

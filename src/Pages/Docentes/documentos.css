@@ -1,0 +1,22 @@
+.cards-container {
+    padding: 20px;
+  }
+  
+  .card-circle {
+    border-radius: 50%; /* Hace que la tarjeta sea circular */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-circle:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px; /* Ajusta el tamaño de la tarjeta */
+  }
+  

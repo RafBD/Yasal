@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Ocupa el ancho completo de la pantalla */
+    height: 100vh; /* Ocupa el alto completo de la pantalla */
+    overflow-y: auto; /* Activa la barra de desplazamiento vertical */
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center; /* Centra el formulario horizontalmente */
+    align-items: center; /* Centra el formulario verticalmente */
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Alto completo de la ventana */
+}
+
+.evaluacion {
+    width: 75%; /* Ajusta al 100% dentro del contenedor */
+    max-width: none; /* Evita límites en el ancho */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+.evaluacion h2 {
+    font-size: 30px;
+    margin-block-end: 30px;
+}
+
+.evaluacion .form-group {
+    margin-bottom: 25px;
+}
+
+.evaluacion .form-group label {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.evaluacion .form-group input,
+.evaluacion .form-group select,
+.evaluacion .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.evaluacion button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.evaluacion button:hover {
+    background-color: #2a9e06;
+}
+
+.evaluacion .radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluacion .radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+.evaluacion .radio-group input {
+    margin-right: 0.5rem;
+}
+
+.evaluacion .radio-group input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    outline: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.evaluacion .radio-group input[type="radio"]:checked {
+    background-color: #007bff;
+    border: 2px solid #0056b3;
+}
+
+
+.Form{
+    font-size: 25px;
+    margin-block-end: 30px;
+}

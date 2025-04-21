@@ -1,0 +1,22 @@
+.oculto {
+    display: none;
+  }
+
+/* Quitar borde y sombra de cualquier botón del sidebar */
+.p-sidebar .p-sidebar-close {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* En caso de que el selector anterior no funcione */
+button.p-sidebar-close {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Desactiva cualquier borde predeterminado en el botón */
+button.p-sidebar-close:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

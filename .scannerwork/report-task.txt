@@ -1,0 +1,6 @@
+projectKey=Yasal
+serverUrl=http://localhost:9000
+serverVersion=25.4.0.105899
+dashboardUrl=http://localhost:9000/dashboard?id=Yasal
+ceTaskId=6607c921-0946-44ed-bdef-a90aa96ce858
+ceTaskUrl=http://localhost:9000/api/ce/task?id=6607c921-0946-44ed-bdef-a90aa96ce858

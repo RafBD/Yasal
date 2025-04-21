@@ -52,7 +52,7 @@ export default function Factura() {
           <Column field="estado" header="Estado" sortable></Column>
           <Column
             body={(rowData) => (
-              <Button icon="pi pi-pencil" className="p-button-rounded p-button-success mr-2" />
+            <Button icon="pi pi-pencil" className="custom-icon-button" />
             )}
             header="Acciones"
           ></Column>

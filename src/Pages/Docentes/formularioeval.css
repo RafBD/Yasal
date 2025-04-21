@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Fuente legible */
+    color: #333; /* Color de texto más oscuro */
+    overflow-y: auto;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Fondo atractivo */
+}
+
+.evaluacion {
+    width: 90%; /* Ajusta para pantallas pequeñas */
+    max-width: 600px; /* Máximo para pantallas grandes */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.evaluacion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center; /* Alineación centrada */
+    color: #007bff;
+}
+
+.evaluacion .form-group {
+    margin-bottom: 20px;
+}
+
+.evaluacion .form-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.evaluacion .form-group input,
+.evaluacion .form-group select,
+.evaluacion .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.evaluacion button {
+    width: 100%; /* Botón ancho */
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.evaluacion button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto al pasar el ratón */
+}
+
+.evaluacion button:focus {
+    outline: 3px solid #ffeb3b; /* Resaltado para accesibilidad */
+}
+
+.evaluacion .radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluacion .radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.evaluacion .radio-group input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.evaluacion .radio-group input[type="radio"]:checked {
+    background-color: #007bff;
+    border: 2px solid #0056b3;
+}
+
+.evaluacion .radio-group input[type="radio"]:focus {
+    outline: 3px solid #ffeb3b; /* Resaltado de accesibilidad */
+}
+
+.Form {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}

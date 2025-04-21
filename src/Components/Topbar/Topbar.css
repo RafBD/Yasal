@@ -1,7 +1,7 @@
 :root {
-  --morado-obscuro: #56377C;
-  --morado: #6d41a1;
-  --morado-hover: #5D3F81;
+  --morado-obscuro: #0e8cfa;
+  --morado: #0e8cfa;
+  --morado-hover: #0e8cfa;
 }
 
 body {
@@ -99,9 +99,7 @@ img {
   transition: background-color 0.3s ease;
 }
 
-.topbar button:hover {
-  background-color: var(--morado-hover);
-}
+
 
 @media (max-width: 600px) {
   .topbar {
@@ -159,3 +157,4 @@ img {
     font-size: 1rem;
   }
 }
+

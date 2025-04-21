@@ -3,7 +3,7 @@ import { MultiStateCheckbox } from 'primereact/multistatecheckbox';
 import { useAuth0 } from '@auth0/auth0-react';
 import 'primeicons/primeicons.css';
 import { Password } from 'primereact/password';
-import './SettingPage.css';
+import './SettingPage.css'; // Asegúrate de que este archivo CSS esté actualizado
 
 export default function SettingPage() {
     const { user } = useAuth0();
@@ -28,7 +28,8 @@ export default function SettingPage() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4 sm:flex-row sm:flex-wrap sm:gap-6">
+        <div className="setting-page flex flex-col items-center justify-center min-h-screen p-4 sm:flex-row sm:flex-wrap sm:gap-6">
+            {/* Sección de Imagen de Perfil */}
             <div className="max-w-sm w-full bg-transparent border border-gray-200 rounded-lg shadow mb-6 sm:mb-0">
                 <div className="p-5">
                     <h1 className="mb-2 text-2xl font-bold tracking-tight text-center text-white">
@@ -37,10 +38,10 @@ export default function SettingPage() {
                     <div className="flex justify-center mt-3 mb-3">
                         <img src={user.picture} alt={user.name} className="w-24 h-24 rounded-full object-cover" />
                     </div>
-                    <p className="text-center text-white dark:text-gray-400 mb-4">
+                    <p className="text-center dark:text-gray-400 mb-4">
                         Si añades una foto, otras personas podrán reconocerte y sabrás si has iniciado sesión en tu cuenta
                     </p>
-                    <div className="flex items-center gap-2 border border-white text-white w-full p-2 rounded-lg">
+                    <div className="flex items-center gap-2 border border-white w-full p-2 rounded-lg">
                         <MultiStateCheckbox
                             value={value}
                             onChange={(e) => setValue(e.value)}
@@ -57,6 +58,7 @@ export default function SettingPage() {
                 </div>
             </div>
 
+            {/* Sección de Cambio de Contraseña */}
             <div className="max-w-sm w-full bg-transparent border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <div className="p-5">
                     <h2 className="mb-2 text-2xl font-bold tracking-tight text-center text-white">
@@ -68,7 +70,7 @@ export default function SettingPage() {
                                 Nueva Contraseña
                             </label>
                             <Password
-                                className="w-full mt-1 focus:outline-none focus:ring-purple-500 focus:border-purple-900 sm:text-sm"
+                                className="w-full mt-1 focus:outline-none focus:ring-purple-500 focus:border-purple-900 sm:text-sm input-password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 toggleMask
@@ -79,7 +81,7 @@ export default function SettingPage() {
                                 Confirmar Nueva Contraseña
                             </label>
                             <Password
-                                className="w-full mt-1 focus:outline-none focus:ring-purple-500 focus:border-purple-900 sm:text-sm"
+                                className="w-full mt-1 focus:outline-none focus:ring-purple-500 focus:border-purple-900 sm:text-sm input-password"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                                 toggleMask

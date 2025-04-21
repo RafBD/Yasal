@@ -1,0 +1,23 @@
+.grafico-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .grafico-container {
+      height: 300px; /* Ajusta la altura en pantallas pequeñas */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .grafico-container {
+      height: 400px; /* Ajusta la altura en pantallas grandes */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grafico-container {
+      height: 500px; /* Aumenta la altura en pantallas más grandes */
+    }
+  }
+  
